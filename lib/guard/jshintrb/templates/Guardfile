@@ -1,0 +1,4 @@
+guard :jshintrb do
+  watch(%r{^app/assets/javascripts/.+.js})
+  watch(%r{^spec/javascripts/.+.js})
+end
