@@ -1,6 +1,6 @@
 # Guard::Jshintrb
 
-TODO: Write a gem description
+Automatically lint your Javascript files anytime Guard detects a change.
 
 ## Installation
 
@@ -15,10 +15,14 @@ And then execute:
 Or install it yourself as:
 
     $ gem install guard-jshintrb
+    
+And add the configuration to your Guardfile with:
+    
+    $ guard init jshintrb
 
 ## Usage
 
-TODO: Write usage instructions here
+Automatically uses standard JSHint `.jshintrc` and `.jshintignore` configuration files.
 
 ## Contributing
 
