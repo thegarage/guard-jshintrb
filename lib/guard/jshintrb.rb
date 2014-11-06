@@ -6,8 +6,8 @@ require 'jshintrb'
 require 'json'
 
 module Guard
-  class Jshintrb < Guard
-    def initialize(watchers = [], options = {})
+  class Jshintrb < Plugin
+    def initialize(options = {})
       super
       @options = {
         all_on_start: false,
