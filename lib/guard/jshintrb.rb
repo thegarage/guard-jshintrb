@@ -1,6 +1,6 @@
 require 'guard/jshintrb/version'
 require 'guard'
-require 'guard/guard'
+require 'guard/plugin'
 require 'guard/watcher'
 require 'jshintrb'
 require 'json'
