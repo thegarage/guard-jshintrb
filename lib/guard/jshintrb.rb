@@ -15,7 +15,7 @@ module Guard
       }.merge(options)
 
       @jshint_options = JSON.load(File.read('.jshintrc'))
-      @jshint_globals = @jshint_options.delete('globals')
+      @jshint_globals = @jshint_options.delete('globals') { Hash.new }
       @jshint_ignored = File.read('.jshintignore').split.collect { |pattern| Dir.glob(pattern) }.flatten
 
       @failed_paths = []
